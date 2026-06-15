@@ -1,5 +1,5 @@
 [project]
-name = "cancer-prediction-cmn45"
+name = "cancer_prediction_cmn45"
 description = "A basic model to predict cancerous tumors based on certain properties."
 authors = [{name = "Cong Minh Nguyen"}]
 version = "0.1.0"
@@ -18,3 +18,14 @@ dev = [
     "flake8>=5.0.4",
     "isort>=5.13.2",
 ]
+
+[project.scripts]
+cancer-prediction = "cancer_prediction_cmn45.scripts.app:cli"
+train = "cancer_prediction_cmn45.scripts.app:train"
+
+[build-system]
+requires = ["uv_build>=0.9.5,<0.10.0"]
+build-backend = "uv_build"
+
+[tool.uv]
+package = true
