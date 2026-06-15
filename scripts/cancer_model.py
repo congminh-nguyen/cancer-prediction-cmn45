@@ -12,7 +12,6 @@ warnings.filterwarnings('ignore')
 
 import pickle
 
-
 class CancerModel:
     """A class to represent a cancer diagnosis prediction model.
     """
